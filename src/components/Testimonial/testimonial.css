@@ -1,0 +1,8 @@
+.testimonial__content h2 {
+  font-weight: 600;
+}
+.testimonial__img {
+  border-radius: 20%;
+  margin-right: 5%;
+  border-color: black;
+}

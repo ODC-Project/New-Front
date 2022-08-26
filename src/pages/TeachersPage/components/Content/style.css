@@ -1,0 +1,26 @@
+
+.container{
+   padding: 20%;
+padding-top: 50%;
+
+
+}
+.col{
+    visibility: visible;
+     animation-delay: 0.1s; 
+    animation-name: fadeInUp;
+}
+
+
+.position-relative{
+    justify-content: center;
+    display: flex;
+    margin-top: 23px;
+   
+}    
+
+.team-item {
+ padding: 50%;
+ box-sizing: border-box;
+ padding-top: 20%;
+}

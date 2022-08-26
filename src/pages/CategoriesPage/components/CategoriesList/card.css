@@ -1,0 +1,20 @@
+.single__course__item {
+  padding: 30px;
+  background-color: #feffff;
+  size-adjust: 20px;
+}
+
+.course__img img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.category__title__details h5 {
+  font-weight: 600;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.category__title {
+  line-height: 2rem;
+}

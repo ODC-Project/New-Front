@@ -1,0 +1,10 @@
+.banner-img-title {
+  width: 35%;
+  position: absolute;
+  top: 31%;
+  left: 5%;
+}
+
+.banner-text {
+  font-weight: 600;
+}

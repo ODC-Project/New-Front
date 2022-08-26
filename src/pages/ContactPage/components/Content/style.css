@@ -1,0 +1,34 @@
+.contact {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: #818181;
+  margin-top: 50%;
+}
+.container-fluid {
+  padding: 90%;
+}
+.banner-img-container {
+  position: relative;
+}
+.banner-img-title {
+  width: 35%;
+  position: absolute;
+  top: 31%;
+  left: 5%;
+}
+
+.banner-text {
+  font-weight: 600;
+}
+
+.banner-img-title2 {
+  width: 35%;
+  position: absolute;
+  top: 31%;
+  left: 50%;
+}
+.text-contact {
+  background-color: rgb(243, 243, 243);
+  text-decoration: dashed;
+  text-align: center;
+}
