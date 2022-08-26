@@ -33,6 +33,7 @@ const Header = () => {
   const menuToggle = () => menuRef.current.classList.toggle("active__menu");
 
   return (
+
     <header className="header">
       <Container>
         <div className="navigation d-flex align-items-center justify-content-between">
@@ -55,12 +56,15 @@ const Header = () => {
             </div>
 
             <div className="nav__right">
-              <p className="mb-0 d-flex align-items-center gap-2">
-                <i class="ri-login-box-line"></i>
-                <button className="btn highlited-btn">Sign in</button>
-                {/* <i class="ri-phone-line"></i> +88 0123456789 */}
-              </p>
-            </div>
+            <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><span class="fas fa-user"></span> Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><span class="fas fa-sign-in-alt"></span> Login</a>
+      </li>
+    </ul>
+    </div>
           </div>
 
           <div className="mobile__menu">
