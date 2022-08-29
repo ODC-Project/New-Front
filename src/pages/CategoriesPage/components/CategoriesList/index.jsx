@@ -1,10 +1,10 @@
 import React from "react";
-import CategoryCard from "./CategoryCard";
 import { Col, Container, Row } from "reactstrap";
+import CategoryCard from "./CategoryCard";
 import "./style.css";
 
-const CategoryItem = [
-  {
+/*const CategoryItem = [
+   {
     id: "1",
     title: "Development",
     image: "https://expertcode.net/upload/course/5.jpeg",
@@ -36,10 +36,11 @@ const CategoryItem = [
     title: "Machine Learning",
     image:
       "https://blog.integral-system.fr/wp-content/uploads/2020/02/33797061.jpg",
-  },
-];
+  }, 
+];*/
 
-const CategoriesList = () => {
+const CategoriesList = ({ data }) => {
+  console.log(data);
   return (
     <section>
       <div className="banner-img-container">
@@ -78,24 +79,14 @@ const CategoriesList = () => {
       <br />
       <Container>
         <Row>
-          {CategoryItem.map((item, index) => (
+          {data?.map((item) => (
             <Col lg="4" md="6" sm="6">
-              <CategoryCard key={item._id} item={item} index={index} />
+              <CategoryCard key={item._id} item={item} categoryId={item._id} />
             </Col>
           ))}
         </Row>
       </Container>
-      {/*  <Container>
-        <Row>
-          {[1, 2, 3, 4, 5, 6]?.map((item, index) => (
-            <Col lg="4" md="6" sm="6">
-              <CategoryCard key={item._id} item={item} index={index} />
-            </Col>
-          ))}
-        </Row>
-      </Container> */}
     </section>
   );
 };
-
 export default CategoriesList;

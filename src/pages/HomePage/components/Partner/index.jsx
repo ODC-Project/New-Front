@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 
-const Company = () => {
+const Partner = () => {
   return (
     <section>
       <Container>
@@ -50,4 +50,4 @@ const Company = () => {
   );
 };
 
-export default Company;
+export default Partner;

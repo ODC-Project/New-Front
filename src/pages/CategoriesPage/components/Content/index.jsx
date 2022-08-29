@@ -1,11 +1,22 @@
-import React from "react";
-
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import CategoriesList from "../CategoriesList";
 import "./style.css";
+
 const Content = () => {
+  const [categoriesList, setCategoriesList] = useState([]);
+
+  const FetchCategories = async () => {
+    const res = await axios.get("http://localhost:5000/api/categories");
+    setCategoriesList(res.data.data);
+  };
+
+  useEffect(() => {
+    FetchCategories();
+  }, []);
   return (
     <>
-      <CategoriesList />
+      <CategoriesList data={categoriesList} />
     </>
   );
 };

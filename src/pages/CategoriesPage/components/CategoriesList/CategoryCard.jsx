@@ -1,14 +1,13 @@
 import React from "react";
-import CategoriesList from "./index";
 
 import { useNavigate } from "react-router-dom";
 import "./card.css";
 
-const CategoryCard = ({ item, index }) => {
+const CategoryCard = ({ item, categoryId }) => {
   let navigate = useNavigate();
   const { image, title } = item;
 
-  const onCardClick = () => navigate(`/categories/${index}`);
+  const onCardClick = () => navigate(`/categories/${categoryId}`);
   return (
     <>
       <div className="single__course__item" onClick={onCardClick}>

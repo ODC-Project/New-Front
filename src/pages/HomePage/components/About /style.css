@@ -1,0 +1,115 @@
+.counter {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0a2b1e;
+}
+
+.counter__title {
+  font-size: 1rem;
+  color: #0a2b1e;
+  font-weight: 500;
+}
+
+.about__content {
+  padding-left: 50px;
+}
+
+.about__img img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.about__content h2 {
+  font-weight: 500;
+}
+.fadeInUp {
+  visibility: visible;
+  animation-delay: 0.3s;
+  animation-name: fadeInUp;
+}
+.service-item {
+  background: #f0fbfc;
+  transition: 0.5s;
+  border-radius: 20px;
+  border-color: white;
+  margin-left: 20%;
+}
+/* .p-4 {
+      padding: 1.5rem !important;
+  } */
+.ri-earth-fill {
+  font-weight: 900px;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+.p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.card {
+  width: 100%;
+  padding-top: 10%;
+  padding-right: 65rem;
+  padding-left: 65rem;
+  margin-right: auto;
+  margin-top: auto;
+  display: flex;
+  border: 0cm;
+}
+.page-header {
+  background: linear-gradient(
+    rgba(24, 29, 56, 0.7),
+    rgba(24, 29, 56, 0.7),
+    url=
+      "https://img.freepik.com/premium-photo/young-smiling-woman-her-graduation-day-university-standing-with-multiethnic-group-friends-education-qualification-gown-concept_116547-16263.jpg?w=2000"
+  );
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.animation {
+  animation-delay: 0.5s;
+}
+.banner-img-container {
+  position: relative;
+
+  width: 100%;
+}
+.banner-img-title {
+  width: 35%;
+  position: absolute;
+  top: 31%;
+  left: 5%;
+}
+
+.banner-text {
+  font-weight: 600;
+}
+.has-s {
+  left: 10%;
+  padding-top: 20%;
+}
+.has {
+  text-align: center;
+  padding-top: 70px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.has-txt {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.text-bottom {
+  text-align: center;
+  padding-top: 70px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 1rem;
+  line-height: 35px;
+  font-family: "Andada Pro", serif;
+  font-weight: 400;
+}

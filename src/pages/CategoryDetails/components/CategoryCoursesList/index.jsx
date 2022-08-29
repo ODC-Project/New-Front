@@ -3,9 +3,9 @@ import { Container, Row, Col } from "reactstrap";
 import CourseCard from "../../../../components/CourseCard";
 import "./style.css";
 
-const CoursesList = ({ data }) => {
+const CategoryCoursesList = ({ data }) => {
   return (
-    <section>
+    <>
       <div className="banner-img-container">
         <img
           alt=""
@@ -26,7 +26,7 @@ const CoursesList = ({ data }) => {
       <Container>
         <Row>
           <Col lg="12" className="mb-5">
-            <div className="course__top d-flex justify-content-between align-items-center">
+            <div className="course__top d-flex justify-content-between align-items-center pl-0">
               <div className="course__top__left w-50">
                 <h2>A wide selection of courses</h2>
                 <p>
@@ -57,8 +57,8 @@ const CoursesList = ({ data }) => {
           ))}
         </Row>
       </Container>
-    </section>
+    </>
   );
 };
 
-export default CoursesList;
+export default CategoryCoursesList;
