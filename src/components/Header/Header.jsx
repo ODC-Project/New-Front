@@ -83,7 +83,7 @@ const Header = () => {
         localStorage.setItem("token", res.data.token); // save the token in browser memory
         localStorage.setItem("loggedUser", JSON.stringify(res.data.user));
         toggleLogin();
-      }) // do some logic indise then call bacc
+      }) // do some logic indise then call back
       .catch((err) => setLoginError(true)); // do some login
     // if (!response) alert("password or email incorrect");
     // console.log(response.data);

@@ -5,7 +5,6 @@ import CategoryCoursesList from "../CategoryCoursesList";
 
 const Content = () => {
   const params = useParams();
-  console.log(params.id);
 
   const [coursesByCategoryList, setCoursesByCategoryList] = useState([]);
 

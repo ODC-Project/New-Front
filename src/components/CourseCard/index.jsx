@@ -1,11 +1,11 @@
 import React from "react";
 
-const CourseCard = ({ item }) => {
+const CourseCard = ({ item, handleCardClick }) => {
   const { image, title, description, numberOfChapitres, numberOfDoneStudents } =
     item;
 
   return (
-    <div className="single__course__item">
+    <div className="single__course__item" onClick={handleCardClick}>
       <div className="course__img">
         <img src={image} alt="" className="w-100" />
       </div>
