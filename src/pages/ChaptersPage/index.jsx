@@ -6,11 +6,9 @@ import Content from "./components/Content";
 const ChapterPage = () => {
   return (
     <>
-      <>
-        <Header />
-        <Content />
-        <Footer />
-      </>
+      <Header />
+      <Content />
+      <Footer />
     </>
   );
 };

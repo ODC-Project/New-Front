@@ -2,6 +2,7 @@
   padding: 30px;
   background-color: #feffff;
   size-adjust: 20px;
+  cursor: pointer;
 }
 
 .course__img img {

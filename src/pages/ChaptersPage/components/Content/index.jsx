@@ -5,11 +5,19 @@ import axios from "axios";
 
 const Content = () => {
   const params = useParams();
+  const courseId = params.courseId;
   console.log(params.courseId);
   const [chaptersList, setChaptersList] = useState([]);
 
   const FetchCourseChapters = async () => {
-    const res = await axios.get("http://localhost:5000/api/courses/");
+    const res = await axios.get(
+      `http://localhost:5000/api/chapitres/${courseId}`,
+      {
+        headers: {
+          "x-auth-token": localStorage.getItem("token"),
+        },
+      }
+    );
 
     // call api with token
     // const res = await axios.get("http://localhost:5000/api/courses/", {
@@ -17,7 +25,7 @@ const Content = () => {
     //     "x-auth-token": localStorage.getItem("token"),
     //   },
     // });
-    setChaptersList(res.data.courses);
+    setChaptersList(res.data.data);
   };
 
   useEffect(() => {
@@ -25,8 +33,8 @@ const Content = () => {
   }, []);
   return (
     <section>
-      this content page
-      <ChaptersList />
+      this content page {chaptersList?.length}
+      <ChaptersList data={chaptersList} />
     </section>
   );
 };
