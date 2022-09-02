@@ -12,11 +12,11 @@ const AboutUs = () => {
 <Row>
   <Col lg="3" md="6" sm="6">
     <div className="animation-delay: 0.5s">
-      <div class="service-item text-center pt-3">
-        <div class="p-4">
-          <i class="ri-earth-fill"></i>
+      <div className="service-item text-center pt-3">
+        <div className="p-4">
+          <i className="ri-earth-fill"></i>
 
-          <h5 class="mb-3">Online Classes</h5>
+          <h5 className="mb-3">Online Classes</h5>
           <p>
             Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
             amet diam
@@ -27,10 +27,10 @@ const AboutUs = () => {
   </Col>
   <Col lg="3" md="6" sm="6">
     <div className="wow fadeInUp" data-wow-delay="0.3s">
-      <div class="service-item text-center pt-3">
-        <div class="p-4">
-          <i class="ri-honour-fill"></i>
-          <h5 class="mb-3">Skilled Instructors</h5>
+      <div className="service-item text-center pt-3">
+        <div className="p-4">
+          <i className="ri-honour-fill"></i>
+          <h5 className="mb-3">Skilled Instructors</h5>
           <p>
             Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
             amet diam
@@ -41,10 +41,10 @@ const AboutUs = () => {
   </Col>
   <Col lg="3" md="6" sm="6">
     <div className="wow fadeInUp" data-wow-delay="0.3s">
-      <div class="service-item text-center pt-3">
-        <div class="p-4">
-          <i class="ri-book-mark-fill"></i>
-          <h5 class="mb-3">Book Library</h5>
+      <div className="service-item text-center pt-3">
+        <div className="p-4">
+          <i className="ri-book-mark-fill"></i>
+          <h5 className="mb-3">Book Library</h5>
           <p>
             Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
             amet diam
@@ -55,10 +55,10 @@ const AboutUs = () => {
   </Col>
   <Col lg="3" md="6" sm="6">
     <div className="wow fadeInUp" data-wow-delay="0.3s">
-      <div class="service-item text-center pt-3">
-        <div class="p-4">
-          <i class="ri-home-3-line"></i>
-          <h5 class="mb-3">Home Projects</h5>
+      <div className="service-item text-center pt-3">
+        <div className="p-4">
+          <i className="ri-home-3-line"></i>
+          <h5 className="mb-3">Home Projects</h5>
           <p>
             Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita
             amet diam

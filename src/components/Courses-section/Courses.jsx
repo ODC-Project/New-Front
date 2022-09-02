@@ -3,7 +3,9 @@ import { Container, Row, Col } from "reactstrap";
 
 import "./courses.css";
 import CourseCard from "./CourseCard";
+import { useNavigate } from "react-router-dom";
 
+// to change with api
 const coursesData = [
   {
     id: "01",
@@ -37,6 +39,11 @@ const coursesData = [
 ];
 
 const Courses = () => {
+  let navigate = useNavigate();
+  const handleClick = (id) => {
+    navigate(`/Chapters/${id}`);
+  };
+
   return (
     <section>
       <Container>
@@ -57,11 +64,17 @@ const Courses = () => {
               </div>
             </div>
           </Col>
-          {coursesData.map((item) => (
-            <Col lg="4" md="6" sm="6">
-              <CourseCard key={item.id} item={item} />
-            </Col>
-          ))}
+          {coursesData.map((item) => {
+            console.log(item);
+            return (
+              <Col lg="4" md="6" sm="6" key={item.id}>
+                <CourseCard
+                  item={item}
+                  handleCardClick={() => handleClick(item.id)}
+                />
+              </Col>
+            );
+          })}
         </Row>
       </Container>
     </section>

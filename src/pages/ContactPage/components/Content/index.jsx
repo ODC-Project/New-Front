@@ -18,28 +18,28 @@ const Content = () => {
           <Row>
             <Col>
               <div className="contact">
-                <h2 class="text-center">CONTACT</h2>
-                <div class="row">
-                  <div class="col-sm-5">
+                <h2 className="text-center">CONTACT</h2>
+                <div className="row">
+                  <div className="col-sm-5">
                     <p>Contact us and we'll get back to you within 24 hours.</p>
                     <p>
-                      <span class="glyphicon glyphicon-map-marker"></span>{" "}
+                      <span className="glyphicon glyphicon-map-marker"></span>{" "}
                       Tunis, Tunisia
                     </p>
                     <p>
-                      <span class="glyphicon glyphicon-phone"></span> +216
+                      <span className="glyphicon glyphicon-phone"></span> +216
                       345676543
                     </p>
                     <p>
-                      <span class="glyphicon glyphicon-envelope"></span>{" "}
+                      <span className="glyphicon glyphicon-envelope"></span>{" "}
                       myemail@something.com
                     </p>
                   </div>
-                  <div class="col-sm-7 slideanim">
-                    <div class="row">
-                      <div class="col-sm-6 form-group">
+                  <div className="col-sm-7 slideanim">
+                    <div className="row">
+                      <div className="col-sm-6 form-group">
                         <input
-                          class="form-control"
+                          className="form-control"
                           id="name"
                           name="name"
                           placeholder="Name"
@@ -47,9 +47,9 @@ const Content = () => {
                           required
                         />
                       </div>
-                      <div class="col-sm-6 form-group">
+                      <div className="col-sm-6 form-group">
                         <input
-                          class="form-control"
+                          className="form-control"
                           id="email"
                           name="email"
                           placeholder="Email"
@@ -60,17 +60,17 @@ const Content = () => {
                     </div>
 
                     <textarea
-                      class="form-control"
+                      className="form-control"
                       id="comments"
                       name="comments"
                       placeholder="Comment"
                       rows="5"
                     ></textarea>
                     <br />
-                    <div class="row">
-                      <div class="col-sm-12 form-group">
+                    <div className="row">
+                      <div className="col-sm-12 form-group">
                         <button
-                          class="btn btn-default pull-right"
+                          className="btn btn-default pull-right"
                           type="submit"
                         >
                           Send

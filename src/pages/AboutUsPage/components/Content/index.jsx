@@ -8,10 +8,10 @@ const Content = () => {
   return (
     <>
       {/*   <div className="lg-3 sm-3 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item text-center pt-3">
-                        <div class="p-4">
-                        <i class="ri-earth-fill"></i>
-                            <h5 class="mb-3">Online Classes</h5>
+                    <div className="service-item text-center pt-3">
+                        <div className="p-4">
+                        <i className="ri-earth-fill"></i>
+                            <h5 className="mb-3">Online Classes</h5>
                             <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
                         </div>
                     </div>

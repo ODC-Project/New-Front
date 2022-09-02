@@ -21,7 +21,7 @@ const Content = () => {
 
   useEffect(() => {
     fetchCoursesByCategory(params.id);
-  }, [params.id]); // hedhi ma3neha a3mel execution lil use Effect kol maytbadel url fil fih catgoryId emte3na fhmet ??oui rouhi good ne9sa 7aja fil url lzem en3adiw id
+  }, [params.id]);
 
   return (
     <section>

@@ -22,7 +22,7 @@ const App = () => {
       setIsUserLogged(true);
     } else setIsUserLogged(false);
   }, []);
-
+  // routes definitions
   return (
     <>
       <BrowserRouter>

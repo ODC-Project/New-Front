@@ -96,6 +96,28 @@ const Header = () => {
     const name = e.target.name.value;
     const lastName = e.target.lastName.value;
 
+    /* const configuration = {
+      method: "POST",
+      url: "http://localhost:5000/api/users/register",
+      data: {
+        name,
+        lastName,
+        email,
+        password,
+      },
+    };
+    // make the API call
+    axios(configuration)
+      .then((res) => {
+        setRegisterError(false);
+        toggleRegister();
+      })
+      .catch((err) => {
+        setRegisterError(true);
+      });
+    // make a popup alert showing the "submitted" text
+    alert("Submited");
+  }; */
     axios
       .post("http://localhost:5000/api/users/register", {
         name,
@@ -113,7 +135,6 @@ const Header = () => {
         setRegisterError(true);
       });
   };
-
   const handleLogOut = () => {
     localStorage.clear();
     window.location.reload(); // refresh the browser
@@ -125,7 +146,7 @@ const Header = () => {
         <div className="navigation d-flex align-items-center justify-content-between">
           <div className="logo">
             <h2 className=" d-flex align-items-center gap-1">
-              <i class="ri-book-open-line"></i> E-learning.
+              <i className="ri-book-open-line"></i> E-learning.
             </h2>
           </div>
 
@@ -205,19 +226,24 @@ const Header = () => {
                   {loginError && (
                     <Alert color="danger">Please check your creedatial</Alert>
                   )}
-                  <Button
-                    style={{ backgroundColor: "#1795bf" }}
-                    onClick={cancelLogin}
-                  >
-                    Cancel
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: "#1795bf" }}
-                    type="submit"
-                    // onClick={toggleLogin}
-                  >
-                    Login
-                  </Button>{" "}
+                  <div className="d-flex justify-content-end">
+                    <Button
+                      style={{
+                        backgroundColor: "#1795bf",
+                        marginRight: "10px",
+                      }}
+                      onClick={cancelLogin}
+                    >
+                      Cancel
+                    </Button>
+                    <Button
+                      style={{ backgroundColor: "#1795bf" }}
+                      type="submit"
+                      // onClick={toggleLogin}
+                    >
+                      Login
+                    </Button>{" "}
+                  </div>
                 </Form>
               </ModalBody>
             </Modal>
@@ -269,19 +295,24 @@ const Header = () => {
                   {registerError && (
                     <Alert color="danger">Please try again</Alert>
                   )}
-                  <Button
-                    style={{ backgroundColor: "#1795bf" }}
-                    onClick={cancelLogin}
-                  >
-                    Cancel
-                  </Button>
-                  <Button
-                    style={{ backgroundColor: "#1795bf" }}
-                    type="submit"
-                    // onClick={toggleLogin}
-                  >
-                    Register
-                  </Button>{" "}
+                  <div className="d-flex justify-content-end">
+                    <Button
+                      style={{
+                        backgroundColor: "#1795bf",
+                        marginRight: "10px",
+                      }}
+                      onClick={cancelLogin}
+                    >
+                      Cancel
+                    </Button>
+                    <Button
+                      style={{ backgroundColor: "#1795bf" }}
+                      type="submit"
+                      // onClick={toggleLogin}
+                    >
+                      Register
+                    </Button>{" "}
+                  </div>
                 </Form>
               </ModalBody>
             </Modal>
@@ -289,7 +320,7 @@ const Header = () => {
 
           <div className="mobile__menu">
             <span>
-              <i class="ri-menu-line" onClick={menuToggle}></i>
+              <i className="ri-menu-line" onClick={menuToggle}></i>
             </span>
           </div>
         </div>

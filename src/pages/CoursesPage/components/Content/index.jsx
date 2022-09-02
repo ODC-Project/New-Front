@@ -2,12 +2,14 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import CoursesList from "../CoursesList";
 import { Row, Col } from "reactstrap";
+import { useParams } from "react-router-dom";
 
 const Content = () => {
   const [coursesList, setCourseList] = useState([]);
+  const params = useParams();
 
   const FetchCourses = async () => {
-    const res = await axios.get("http://localhost:5000/api/courses/");
+    const res = await axios.get(`http://localhost:5000/api/courses/`);
 
     // call api with token
     // const res = await axios.get("http://localhost:5000/api/courses/", {
