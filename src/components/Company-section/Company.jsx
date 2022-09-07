@@ -1,49 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { Container, Row, Col } from "reactstrap";
 
 const Company = () => {
+  const [partnerList, setPartnerList] = useState([]);
+  const fetchPartners = async () => {
+    const res = await axios.get("http://localhost:5000/api/partners");
+    setPartnerList(res.data.data);
+  };
+  useEffect(() => {
+    fetchPartners();
+  }, []);
+  console.log(partnerList);
   return (
     <section>
       <Container>
         <Row>
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-              <i className="ri-apple-fill"></i>Apple
-            </h3>
-          </Col>
-
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-              <i className="ri-microsoft-fill"></i> Microsoft
-            </h3>
-          </Col>
-
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-              <i className="ri-amazon-fill"></i> Amazon
-            </h3>
-          </Col>
-
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-              {" "}
-              <i className="ri-vimeo-fill"></i> Vimeo
-            </h3>
-          </Col>
-
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h3 className=" d-flex align-items-center gap-1">
-              {" "}
-              <i className="ri-finder-fill"></i> Finder
-            </h3>
-          </Col>
-
-          <Col lg="2" md="3" sm="4" xs="6">
-            <h2 className=" d-flex align-items-center gap-1">
-              {" "}
-              <i className="ri-google-fill"></i> Google
-            </h2>
-          </Col>
+          {partnerList?.map((partner) => {
+            return (
+              <Col lg="2" md="3" sm="4" xs="6">
+                <h3 className=" d-flex align-items-center gap-1">
+                  {/* <i className="ri-apple-fill"></i> */}
+                  <img
+                    src={partner.logo}
+                    class="rounded"
+                    alt="logo"
+                    height="50px"
+                    width="50px"
+                  />
+                  {partner.name}
+                </h3>
+              </Col>
+            );
+          })}
         </Row>
       </Container>
     </section>

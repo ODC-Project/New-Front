@@ -1,12 +1,12 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Table } from "reactstrap";
 
 import "./courses.css";
 import CourseCard from "./CourseCard";
 import { useNavigate } from "react-router-dom";
 
 // to change with api
-const coursesData = [
+/* const coursesData = [
   {
     id: "01",
     title: "Data Science",
@@ -36,7 +36,7 @@ const coursesData = [
     image:
       "https://web4s.vn/uploads/tiny_uploads/tin-tuc/web-development/development-la-gi.jpeg",
   },
-];
+]; */
 
 const Courses = () => {
   let navigate = useNavigate();
@@ -64,7 +64,37 @@ const Courses = () => {
               </div>
             </div>
           </Col>
-          {coursesData.map((item) => {
+          <Table borderless>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </Table>
+          {/* {coursesData.map((item) => {
             console.log(item);
             return (
               <Col lg="4" md="6" sm="6" key={item.id}>
@@ -74,7 +104,7 @@ const Courses = () => {
                 />
               </Col>
             );
-          })}
+          })} */}
         </Row>
       </Container>
     </section>

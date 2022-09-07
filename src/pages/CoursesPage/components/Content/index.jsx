@@ -9,14 +9,14 @@ const Content = () => {
   const params = useParams();
 
   const FetchCourses = async () => {
-    const res = await axios.get(`http://localhost:5000/api/courses/`);
+    // const res = await axios.get(`http://localhost:5000/api/courses`);
 
     // call api with token
-    // const res = await axios.get("http://localhost:5000/api/courses/", {
-    //   headers: {
-    //     "x-auth-token": localStorage.getItem("token"),
-    //   },
-    // });
+    const res = await axios.get("http://localhost:5000/api/courses", {
+      headers: {
+        "x-auth-token": localStorage.getItem("token"),
+      },
+    });
     setCourseList(res.data.courses);
   };
 

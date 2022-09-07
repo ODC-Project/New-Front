@@ -7,7 +7,7 @@ import AboutUs from "../components/About-us/AboutUs";
 import Courses from "../components/Courses-section/Courses";
 import ChooseUs from "../components/Choose-us/ChooseUs";
 import Features from "./HomePage/components/Feature";
-import FreeCourse from "../components/Free-course-section/FreeCourse";
+import FreeCourse from "../components/Free-course-section";
 
 import Testimonials from "../components/Testimonial/Testimonials";
 
@@ -22,7 +22,7 @@ const Home = () => {
       <CompanySection />
       <AboutUs />
 
-      <Courses />
+      {/* <Courses /> */}
       <ChooseUs />
       <Features />
       <FreeCourse />

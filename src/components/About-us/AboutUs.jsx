@@ -7,7 +7,7 @@ import "./about.css";
 
 const AboutUs = () => {
   return (
-    <section>
+    <section className="about">
       {/* <Container className="card">
 <Row>
   <Col lg="3" md="6" sm="6">
@@ -87,37 +87,47 @@ const AboutUs = () => {
             <div className="about__content">
               <h2>About Us</h2>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Excepturi cupiditate animi deserunt libero nesciunt corporis
-                explicabo nobis ex quo molestiae!
+                The E-Learning method now replaces the traditional, highly
+                theoretical and non-motivating educational system. Our learning
+                model is based on projects and exercises providing the student
+                with long-term knowledge and skills.
               </p>
 
               <div className="about__counter">
                 <div className=" d-flex gap-5 align-items-center">
                   <div className="single__counter">
                     <span className="counter">
-                      <CountUp start={0} end={25} duration={2} suffix="K" />
+                      <CountUp start={0} end={25} duration={2} suffix="M" />
                     </span>
 
-                    <p className="counter__title">Completed Projects</p>
+                    <p className="counter__title">
+                      students trained in the trendiest technologies on the
+                      market.
+                    </p>
                   </div>
 
                   <div className="single__counter">
                     <span className="counter">
-                      <CountUp start={0} end={12} duration={2} suffix="M" />
+                      <CountUp start={0} end={12} duration={2} suffix="K" />
                     </span>
 
-                    <p className="counter__title">Patient Around World</p>
+                    <p className="counter__title">
+                      trainer instructors who accompany our students on a daily
+                      basis.
+                    </p>
                   </div>
                 </div>
 
                 <div className=" d-flex gap-5 align-items-center">
                   <div className="single__counter">
                     <span className="counter">
-                      <CountUp start={0} end={95} duration={2} suffix="M" />
+                      <CountUp start={0} end={95} duration={2} suffix="K" />
                     </span>
 
-                    <p className="counter__title">Ideas Raised Funds</p>
+                    <p className="counter__title">
+                      training courses launched with professionals in the
+                      business.
+                    </p>
                   </div>
 
                   <div className="single__counter">
@@ -125,7 +135,9 @@ const AboutUs = () => {
                       <CountUp start={0} end={5} duration={2} suffix="K" />
                     </span>
 
-                    <p className="counter__title">Categories Served</p>
+                    <p className="counter__title">
+                      recruiting partners who have trusted our pedagogy
+                    </p>
                   </div>
                 </div>
               </div>

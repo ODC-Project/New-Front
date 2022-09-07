@@ -18,13 +18,6 @@ const Content = () => {
         },
       }
     );
-
-    // call api with token
-    // const res = await axios.get("http://localhost:5000/api/courses/", {
-    //   headers: {
-    //     "x-auth-token": localStorage.getItem("token"),
-    //   },
-    // });
     setChaptersList(res.data.data);
   };
 

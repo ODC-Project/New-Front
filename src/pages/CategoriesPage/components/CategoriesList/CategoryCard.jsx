@@ -12,7 +12,12 @@ const CategoryCard = ({ item, categoryId }) => {
     <>
       <div className="single__course__item" onClick={onCardClick}>
         <div className="course__img">
-          <img src={image} alt="" className="w-100" />
+          <img
+            src={image}
+            alt=""
+            className="w-100"
+            style={{ height: "200px" }}
+          />
         </div>
 
         <div className="category__title__details">
