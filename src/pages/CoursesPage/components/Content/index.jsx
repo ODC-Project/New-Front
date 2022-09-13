@@ -9,10 +9,10 @@ const Content = () => {
   const params = useParams();
 
   const FetchCourses = async () => {
-    // const res = await axios.get(`http://localhost:5000/api/courses`);
+    // const res = await axios.get(`http://159.89.12.104:5000/api/courses`);
 
     // call api with token
-    const res = await axios.get("http://localhost:5000/api/courses", {
+    const res = await axios.get("http://159.89.12.104:5000/api/courses", {
       headers: {
         "x-auth-token": localStorage.getItem("token"),
       },

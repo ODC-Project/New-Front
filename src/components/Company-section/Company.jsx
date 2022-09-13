@@ -5,7 +5,7 @@ import { Container, Row, Col } from "reactstrap";
 const Company = () => {
   const [partnerList, setPartnerList] = useState([]);
   const fetchPartners = async () => {
-    const res = await axios.get("http://localhost:5000/api/partners");
+    const res = await axios.get("http://159.89.12.104:5000/api/partners");
     setPartnerList(res.data.data);
   };
   useEffect(() => {

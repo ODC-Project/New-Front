@@ -74,7 +74,7 @@ const Header = () => {
     const email = e.target.email.value;
     const password = e.target.password.value;
     axios
-      .post("http://localhost:5000/api/users/login", {
+      .post("http://159.89.12.104:5000/api/users/login", {
         email,
         password,
       })
@@ -98,7 +98,7 @@ const Header = () => {
 
     /* const configuration = {
       method: "POST",
-      url: "http://localhost:5000/api/users/register",
+      url: "http://159.89.12.104:5000/api/users/register",
       data: {
         name,
         lastName,
@@ -119,7 +119,7 @@ const Header = () => {
     alert("Submited");
   }; */
     axios
-      .post("http://localhost:5000/api/users/register", {
+      .post("http://159.89.12.104:5000/api/users/register", {
         name,
         lastName,
         email,
