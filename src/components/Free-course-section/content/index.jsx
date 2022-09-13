@@ -6,7 +6,7 @@ import FreeCourseList from "../FreeCourse";
 const Content = () => {
   const [freeCourseList, setFreeCourseList] = useState([]);
   const FetchFreeCourses = async () => {
-    const res = await axios.get("http://159.89.12.104:5000/api/courses/free");
+    const res = await axios.get("http://localhost:5000/api/courses/free");
     setFreeCourseList(res.data.data);
   };
   useEffect(() => {

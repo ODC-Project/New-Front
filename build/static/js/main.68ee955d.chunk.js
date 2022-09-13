@@ -254,10 +254,10 @@
                             (s = t.target.email.value),
                             (c = t.target.password.value),
                             g.a
-                              .post(
-                                "http://159.89.12.104:5000/api/users/login",
-                                { email: s, password: c }
-                              )
+                              .post("http://localhost:5000/api/users/login", {
+                                email: s,
+                                password: c,
+                              })
                               .then(function (e) {
                                 N(!1),
                                   localStorage.setItem("token", e.data.token),
@@ -296,7 +296,7 @@
                             (i = t.target.lastName.value),
                             g.a
                               .post(
-                                "http://159.89.12.104:5000/api/users/register",
+                                "http://localhost:5000/api/users/register",
                                 { name: n, lastName: i, email: s, password: c }
                               )
                               .then(function (e) {
@@ -1158,7 +1158,7 @@
                           case 0:
                             return (
                               (e.next = 2),
-                              g.a.get("http://159.89.12.104:5000/api/courses", {
+                              g.a.get("http://localhost:5000/api/courses", {
                                 headers: {
                                   "x-auth-token": localStorage.getItem("token"),
                                 },
@@ -1361,7 +1361,7 @@
                         case 0:
                           return (
                             (e.next = 2),
-                            g.a.get("http://159.89.12.104:5000/api/partners")
+                            g.a.get("http://localhost:5000/api/partners")
                           );
                         case 2:
                           (t = e.sent), n(t.data.data);
@@ -1708,9 +1708,7 @@
                         case 0:
                           return (
                             (e.next = 2),
-                            g.a.get(
-                              "http://159.89.12.104:5000/api/courses/free"
-                            )
+                            g.a.get("http://localhost:5000/api/courses/free")
                           );
                         case 2:
                           (t = e.sent), n(t.data.data);
@@ -2374,15 +2372,11 @@
                           case 0:
                             return (
                               (e.next = 2),
-                              g.a.get(
-                                "http://159.89.12.104:5000/api/categories",
-                                {
-                                  headers: {
-                                    "x-auth-token":
-                                      localStorage.getItem("token"),
-                                  },
-                                }
-                              )
+                              g.a.get("http://localhost:5000/api/categories", {
+                                headers: {
+                                  "x-auth-token": localStorage.getItem("token"),
+                                },
+                              })
                             );
                           case 2:
                             (t = e.sent), n(t.data.data);
@@ -2524,9 +2518,7 @@
                           return (
                             (t.next = 2),
                             g.a.get(
-                              "http://159.89.12.104:5000/api/courses/".concat(
-                                e.id
-                              )
+                              "http://localhost:5000/api/courses/".concat(e.id)
                             )
                           );
                         case 2:
@@ -2635,9 +2627,7 @@
                           return (
                             (e.next = 2),
                             g.a.get(
-                              "http://159.89.12.104:5000/api/chapitres/".concat(
-                                a
-                              ),
+                              "http://localhost:5000/api/chapitres/".concat(a),
                               {
                                 headers: {
                                   "x-auth-token": localStorage.getItem("token"),

@@ -10,11 +10,11 @@ const Content = () => {
 
   const fetchCoursesByCategory = async () => {
     // const res = await axios.get(
-    //   "http://159.89.12.104:5000/api/courses/" + params.id
+    //   "http://localhost:5000/api/courses/" + params.id
     // );
 
     const res = await axios.get(
-      `http://159.89.12.104:5000/api/courses/${params.id}`
+      `http://localhost:5000/api/courses/${params.id}`
     );
     setCoursesByCategoryList(res.data.data);
   };

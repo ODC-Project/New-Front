@@ -7,7 +7,7 @@ const Content = () => {
   const [categoriesList, setCategoriesList] = useState([]);
 
   const FetchCategories = async () => {
-    const res = await axios.get("http://159.89.12.104:5000/api/categories", {
+    const res = await axios.get("http://localhost:5000/api/categories", {
       headers: {
         "x-auth-token": localStorage.getItem("token"),
       },

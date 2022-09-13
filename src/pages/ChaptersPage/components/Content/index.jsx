@@ -11,7 +11,7 @@ const Content = () => {
 
   const FetchCourseChapters = async () => {
     const res = await axios.get(
-      `http://159.89.12.104:5000/api/chapitres/${courseId}`,
+      `http://localhost:5000/api/chapitres/${courseId}`,
       {
         headers: {
           "x-auth-token": localStorage.getItem("token"),
