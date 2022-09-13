@@ -43,11 +43,11 @@ const navLinks = [
     url: "/contact",
     protected: false,
   },
-  {
+  /*  {
     display: "My Space",
     url: "/my-space",
     protected: true,
-  },
+  }, */
 ];
 
 const Header = () => {

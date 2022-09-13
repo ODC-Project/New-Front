@@ -26,8 +26,13 @@ const Content = () => {
   }, []);
   return (
     <section>
-      this content page {chaptersList?.length}
-      <ChaptersList data={chaptersList} />
+      <ChaptersList
+        data={chaptersList}
+        courseTitle={chaptersList[0]?.courseId?.title || "title"}
+        courseDescription={
+          chaptersList[0]?.courseId?.description || "description"
+        }
+      />
     </section>
   );
 };

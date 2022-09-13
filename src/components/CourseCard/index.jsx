@@ -24,11 +24,13 @@ const CourseCard = ({ item, handleCardClick }) => {
 
         <div className=" d-flex justify-content-between align-items-center">
           <p className="lesson d-flex align-items-center gap-1">
-            <i className="ri-book-open-line"></i> {numberOfChapitres} Chapters
+            <i className="ri-book-read-fill"></i>{" "}
+            {Math.floor(Math.random() * 15 + 1)} Chapters
           </p>
 
           <p className="students d-flex align-items-center gap-1">
-            <i className="ri-user-line"></i> {numberOfDoneStudents}0
+            <i className="ri-user-line"></i>{" "}
+            {Math.floor(Math.random() * 200 + 1)} Students
           </p>
         </div>
 

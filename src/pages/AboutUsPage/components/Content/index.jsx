@@ -67,12 +67,11 @@ const Content = () => {
               <div className="about__content">
                 <h1>About Us</h1>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Excepturi cupiditate animi deserunt libero nesciunt corporis
-                  explicabo nobis ex quo molestiae!
+                  The E-Learning method now replaces the traditional, highly
+                  theoretical and non-motivating educational system.
                 </p>
                 <p className="has-s-font-size">
-                  <strong>Was build to change that. </strong>
+                  <strong>Was build to change.</strong>
                   We’re on a mission to democratize training. To deliver a
                   premium learning experience that’s accessible, affordable, and
                   actually enjoyable.

@@ -44,7 +44,10 @@ const Content = () => {
         </div>
         <Row>
           <Col lg="12" className="mb-5">
-            <div className="course__top d-flex justify-content-between align-items-center">
+            <div
+              className="course__top d-flex justify-content-between align-items-center"
+              style={{ paddingBottom: "0" }}
+            >
               <div className="course__top__left w-50">
                 <h2>A wide selection of courses</h2>
                 <p>

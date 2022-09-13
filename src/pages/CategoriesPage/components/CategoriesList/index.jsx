@@ -52,10 +52,10 @@ const CategoriesList = ({ data }) => {
         <div className="banner-img-title">
           <h2 className="banner-text">Our Courses Categories</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-            maiores. Amet, repellat quis, quod excepturi ipsum tempore
-            reprehenderit nulla voluptatum maxime explicabo perferendis ducimus
-            fugit odio iusto enim deserunt rerum!
+            The content of our courses is developed with E-learning partner
+            companies. It is employability oriented and is constantly updated
+            according to recruiters' requests. Start your new career at any
+            time! Available part-time? No problem, study at your own pace.
           </p>
         </div>
       </div>
@@ -67,13 +67,12 @@ const CategoriesList = ({ data }) => {
       </div>
       <div className="has-txt">
         <p>
-          When people grow, companies do too. And yet,
           <strong>
-            so often the training we carefully create for our teams, is
-            delivered on platforms not built for us.
+            Benefit from weekly mentoring sessions with an industry expert
           </strong>
-          They’re confusing to use, stressful to manage, and just feel…off. To
-          add insult to injury, they often come at a price we can’t afford.
+          In addition to containing a final project, each course contains
+          several projects and practical exercises to give the possibility to
+          the student to test and build by himself.
         </p>
       </div>
       <br />
